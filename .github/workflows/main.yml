@@ -32,9 +32,6 @@ jobs:
       - name: Run TS type checks
         run: yarn tsc
 
-      - name: Build
-        run: yarn build
-
   dead-code:
     name: Dead Code
     runs-on: ubuntu-latest

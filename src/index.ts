@@ -6,12 +6,12 @@ const port = process.env.PORT || 8080;
 
 app.use(express.json());
 
-app.get("/", (res: Response) => {
+app.get("/", (req: Request, res: Response) => {
   res.json({
     message: "PSTrack Server!",
   });
 });
 
 app.listen(port, () => {
-  console.log(`https://localhost:${port}`);
+  console.log(`http://localhost:${port}`);
 });

@@ -1,16 +1,17 @@
-import type { Request, Response } from 'express'
-import express from 'express'
+import type { Request, Response } from "express";
+import express from "express";
 
-const app = express()
+const app = express();
+const port = process.env.PORT || 8080;
 
-const port = process.env.PORT
+app.use(express.json());
 
-app.get('/', (res: Response) => {
-  res.send({
-    message: 'PSTrack Server!',
-  })
-})
+app.get("/", (res: Response) => {
+  res.json({
+    message: "PSTrack Server!",
+  });
+});
 
 app.listen(port, () => {
-  console.log(`https://localhost:${port}`)
-})
+  console.log(`https://localhost:${port}`);
+});

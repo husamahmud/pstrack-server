@@ -1,12 +1,14 @@
 {
   "name": "pstrack-server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "type": "module",
   "author": "Hüsam <devhsmq@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "node --watch --env-file=.env src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
     "format": "npx biome format --write ./src",
     "lint": "npx biome lint ./src",
     "tsc": "tsc --noEmit"

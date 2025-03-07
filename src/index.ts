@@ -5,7 +5,7 @@ const app = express();
 
 const port = process.env.PORT;
 
-app.get("/", (req: Request, res: Response) => {
+app.get("/", (res: Response) => {
   res.json({ message: "Welcome to the Express + TypeScript Server!" });
 });
 

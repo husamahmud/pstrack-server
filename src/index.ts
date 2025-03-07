@@ -6,7 +6,9 @@ const app = express()
 const port = process.env.PORT
 
 app.get('/', (res: Response) => {
-  res.json({ message: 'Welcome to the Express + TypeScript Server!' })
+  res.send({
+    message: 'PSTrack Server!',
+  })
 })
 
 app.listen(port, () => {

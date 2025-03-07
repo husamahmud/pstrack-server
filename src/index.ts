@@ -12,5 +12,5 @@ app.get('/', (res: Response) => {
 })
 
 app.listen(port, () => {
-  console.log('Server started')
+  console.log(`https://localhost:${port}`)
 })

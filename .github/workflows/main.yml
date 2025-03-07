@@ -9,8 +9,8 @@ on:
       - master
 
 jobs:
-  prettier:
-    name: Run Prettier, Eslint, and TS type checks
+  checks:
+    name: Main Checks
     runs-on: ubuntu-latest
 
     steps:

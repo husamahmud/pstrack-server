@@ -1,0 +1,14 @@
+- deploy on Vercel
+    - leetpush Extension is deployed on Vercel
+- Express
+- SQL `mysql2`
+- Redis
+- nodemailer
+- Bucket for images
+- Docker
+- testing
+- Security
+    - rate limits
+    - xss attacks
+    - sql injection
+- Study diff between pg and mysql here https://x.com/hnasr/status/1859366187534254274
